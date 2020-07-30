@@ -1,0 +1,32 @@
+<app-home></app-home>
+<div class="container" style="width: 1000px;">
+   <br>
+    <h3>CLIENTES</h3>
+    <br>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">DNI</th>
+                <th scope="col">NOMBRE</th>
+                <th scope="col">FEC. NACIMIENTO</th>
+                <th scope="col">SEXO</th>
+                <th scope="col">OBSERVACIONES</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let usuario of usuarios"></tr>
+               <td>{{usuario.idusuario}}</td>
+               <td>{{usuario.dni}}</td>
+               <td>{{usuario.nombre}}</td>
+               <td>{{usuario.fechanac}}</td>
+               <td>{{usuario.sexo}}</td>
+              <td>{{usuario.observacion}}</td>
+               <td><a class="btn btn-warning"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                <td><a class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+            </tr>
+
+        </tbody>
+    </table>
+    
+</div>
